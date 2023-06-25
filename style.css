@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100vw;
+    padding: 1vh;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(243, 64, 64);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 5vmin;
+}
+
+.add-task {
+    padding: 2vmin;
+    height: fit-content;
+    width: 95vw;
+    max-width: 600px;
+    background-color: lightgray;
+    border-radius: 2vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#task-title-input {
+    width: 70vw;
+    max-width: 500px;
+    padding: 1vmin;
+    height: 5vh;
+    color: rgb(78, 71, 71);
+    font-weight: bold;
+    border-radius: 1.5vmin 0 0 1.5vmin;
+    border: none;
+}
+
+#task-title-input:focus {
+    border: 2px solid rgb(243, 64, 64);
+    outline: none;
+}
+
+#submit {
+    padding: 5px;
+    height: 5vh;
+    border-radius: 0 1.5vmin 1.5vmin 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(243, 64, 64);
+}
+
+.separator {
+    width: 95vw;
+    max-width: 600px;
+    padding: 2vmin;
+    margin: 10px;
+    border-radius: 2vmin;
+    color: rgb(78, 71, 71);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-separator {
+    width: 70vw;
+    max-width: 450px;
+    height: 2px;
+    background-color: rgb(78, 71, 71);
+}
+
+.task-card-container {
+    margin: 5px;
+    padding: 2vmin;
+    width: 95vw;
+    max-width: 600px;
+    background-color: lightgray;
+    border-radius: 2vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task-card {
+    width: 100%;
+    padding: 2vmin;
+    height: 5vh;
+    color: rgb(78, 71, 71);
+    border-radius: 1.5vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#delete-task {
+    padding: 0 2vmin;
+    height: 4vh;
+    border-radius: 1.5vmin;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(243, 64, 64);
+}
